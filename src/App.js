@@ -1,5 +1,5 @@
 import "./App.css";
-import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/NavBar";
@@ -7,15 +7,15 @@ import Navbar from "./components/NavBar";
 const App = () => {
   return (
     <>
-       <Navbar />
+      <Navbar />
       <div className="container">
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
         </Routes>
-        </div>  
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default App;
