@@ -5,7 +5,7 @@ const CatCard = (props) => {
   return (
     <div className="one-cat">
       <div className="image">
-        <img src={props.cat.url} />
+        <img src={props.cat.url} alt="cat" />
       </div>
       <div>
         <h2>{props.cat.breeds[0].name}</h2>
