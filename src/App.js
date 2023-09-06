@@ -2,22 +2,20 @@ import "./App.css";
 import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Navbar from "../components/NavBar";
 
 const App = () => {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="about">About</Link>
-        </nav>
+    <>
+       <Navbar />
+      <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
         </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
+        </div>  
+    </>
+  )
+}
 
 export default App;
