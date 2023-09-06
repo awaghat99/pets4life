@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import CatCard from "../components/CatCard";
 
 const CatCardHolder = () => {
-  const [catData, setCatData] = useState();
+  const [catData, setCatData] = useState([]);
   const createRandomPrice = () => {
     return Math.floor(Math.random() * 250);
   };
@@ -29,7 +29,7 @@ const CatCardHolder = () => {
     <div>
       <div className="all-cats">
         {[
-          catData
+          catData.length > 0
             ? catData.map((cat, index) => {
                 return <CatCard key={index} cat={cat} price={createRandomPrice()} />;
               })
