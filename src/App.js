@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 const App = () => {
   const [catData, setCatData] = useState();
   const [basketData, setBasketData] = useState([]);
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
 
   const handleAddToCart = (item) => {
     setBasketData([...basketData, item]);
@@ -18,6 +19,14 @@ const App = () => {
       return i.id !== item.id;
     });
     setBasketData(updatedBasket);
+  };
+
+  const openBasket = () => {
+    setIsBasketOpen(true);
+  };
+
+  const closeBasket = () => {
+    setIsBasketOpen(false);
   };
 
   useEffect(() => {
@@ -45,7 +54,15 @@ const App = () => {
           <Route
             path="/Home"
             element={
-              <Home catData={catData} basketData={basketData} handleAddToCart={handleAddToCart} handleRemoveFromBasket={handleRemoveFromBasket} />
+              <Home
+                catData={catData}
+                basketData={basketData}
+                handleAddToCart={handleAddToCart}
+                handleRemoveFromBasket={handleRemoveFromBasket}
+                openBasket={openBasket}
+                closeBasket={closeBasket}
+                isBasketOpen={isBasketOpen}
+              />
             }
           />
           <Route path="/About" element={<About />} />
