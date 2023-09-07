@@ -8,36 +8,30 @@
 
 .main {
   display: flex;
-}
 
-.container {
 }
 
 .intro {
-  margin-left: 0;
-  padding: 0;
-  width: 50em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 10em;
   text-align: center;
 }
 
 .heading {
-  font-size: 70px;
   font-family: 'Rampart One', cursive;
+  font-size: 90px;
+  margin: 0;
 }
 
 .sub-heading {
-  font-size: 45px;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Rampart One', cursive;
+  font-size: 60px;
 }
 
 .browse {
-  font-size: 35px;
   font-family: 'Dosis', sans-serif;
+  font-size: 45px;
+  padding-bottom: 45px;
 }
-
 
 .sale-btn {
   align-self: center;
@@ -51,14 +45,14 @@
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #000000;
+  color: #000;
   cursor: pointer;
   display: inline-block;
   font-family: 'Dosis', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 2rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -68,30 +62,30 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 200px;
-  height: 100px;
 }
 
 .sale-btn:hover {
-  background-color: #ffb237;
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
+  background-color: #ffb030;
 }
 
 .sale-btn:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-.cat-grid {
-  display: flex;
-  flex-direction: column;
+.aside-from-basket {
+  width: 75;
+}
+
+.full-basket {
+  width: 25%;
 }
 
 .all-cats {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
 }
 
 .one-cat {
@@ -141,18 +135,30 @@
   background-color: blue;
 }
 
-.Basket-item {
-  display: flex;
-}
-
 .basket-container {
   border: 1px solid black;
   width: 100%;
   height: 100%;
 }
 
-.basket-content {}
+.close-basket {
+  position: relative;
+  left: 90%;
+  border: 1px solid black;
+}
+
+.Basket-item {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+.Basket-image {
+  width: 50%;
+  margin: auto;
+}
 
 .Basket-image img {
-  width: 50%;
+  width: 100%;
+  aspect-ratio: 1;
 }

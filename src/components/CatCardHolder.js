@@ -16,15 +16,16 @@ const CatCardHolder = (props) => {
     setCurrentPage(selected);
   };
 
-  const pageCount = Math.ceil(props.CatData ? props.catData.length / catsPerPage : 11);
-  const displayedCats = props.catData ? props.catData.slice(currentPage * catsPerPage, (currentPage + 1) * catsPerPage) : "No Cats Yet";
+  const pageCount = Math.ceil(props.catData ? props.catData.length / catsPerPage : 11);
+  const displayedCats = props.catData ? props.catData.slice(currentPage * catsPerPage, (currentPage + 1) * catsPerPage) : [];
   return (
-    <div>
+    <div className="cats-and-paginate">
       <div className="all-cats">
+        {console.log(`displayedcats: ${displayedCats}`)}
         {[
-          displayedCats
+          displayedCats.length > 0
             ? displayedCats.map((cat, index) => {
-                return <CatCard key={index} cat={cat} price={createRandomPrice()} />;
+                return <CatCard key={index} cat={cat} price={createRandomPrice()} handleAddToCart={props.handleAddToCart} />;
               })
             : "Loading Cat Data",
         ]}

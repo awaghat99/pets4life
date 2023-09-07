@@ -1,18 +1,24 @@
-import React from 'react'
+import React from "react";
 
-const BasketItem = () => {
+const BasketItem = (props) => {
   return (
-    <div className='Basket-item'>
-        <div className='Basket-image'>
-        <img src='https://cdn2.thecatapi.com/images/ef1.jpg'/>
-        </div>
-        <div className='Basket-price'>
-            <h3>£100</h3>
-        
-            <h2>British Short-hair</h2>
-        </div>
+    <div className="Basket-item">
+      <div className="Basket-image">
+        <img src={props.basketItem.url} alt="cat" />
+      </div>
+      <div className="Basket-price-and-breed">
+        <h3>£100</h3>
+        <h2>{props.basketItem.breeds[0].name ? props.basketItem.breeds[0].name : "Cat Breed"}</h2>
+        <button
+          onClick={() => {
+            props.handleRemoveFromBasket(props.basketItem);
+          }}
+        >
+          Remove
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default BasketItem
+export default BasketItem;
