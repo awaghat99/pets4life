@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import CatCardHolder from "../components/CatCardHolder";
 import Basket from "../components/Basket";
 

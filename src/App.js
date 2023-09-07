@@ -1,7 +1,9 @@
-import "./App.css";
+import "../src/App.css";
+import "../src/style.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Checkout from "./pages/Checkout"
 import Navbar from "./components/NavBar";
 import Landing from "./pages/Landing";
 import { useState, useEffect } from "react";
@@ -67,6 +69,7 @@ const App = () => {
             }
           />
           <Route path="/About" element={<About />} />
+          <Route path="/Checkout" element={<Checkout />} />
           <Route path="/" element={<Landing />} />
         </Routes>
       </div>
