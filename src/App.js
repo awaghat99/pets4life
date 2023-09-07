@@ -9,6 +9,27 @@ import { useState, useEffect } from "react";
 
 const App = () => {
   const [catData, setCatData] = useState();
+  const [basketData, setBasketData] = useState([]);
+  const [isBasketOpen, setIsBasketOpen] = useState(false);
+
+  const handleAddToCart = (item) => {
+    setBasketData([...basketData, item]);
+  };
+
+  const handleRemoveFromBasket = (item) => {
+    const updatedBasket = basketData.filter((i) => {
+      return i.id !== item.id;
+    });
+    setBasketData(updatedBasket);
+  };
+
+  const openBasket = () => {
+    setIsBasketOpen(true);
+  };
+
+  const closeBasket = () => {
+    setIsBasketOpen(false);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,7 +53,20 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/Home" element={<Home catData={catData} />} />
+          <Route
+            path="/Home"
+            element={
+              <Home
+                catData={catData}
+                basketData={basketData}
+                handleAddToCart={handleAddToCart}
+                handleRemoveFromBasket={handleRemoveFromBasket}
+                openBasket={openBasket}
+                closeBasket={closeBasket}
+                isBasketOpen={isBasketOpen}
+              />
+            }
+          />
           <Route path="/About" element={<About />} />
           <Route path="/Checkout" element={<Checkout />} />
         </Routes>

@@ -6,10 +6,15 @@ const Home = (props) => {
   return (
     <div className="main">
       <div className="aside-from-basket">
-        <CatCardHolder catData={props.catData} />
+        <h1>Cats For Life</h1>
+        <CatCardHolder catData={props.catData} handleAddToCart={props.handleAddToCart} />
       </div>
       <div className="full-basket">
-        <Basket />
+        {props.isBasketOpen ? (
+          <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} closeBasket={props.closeBasket} />
+        ) : (
+          <button onClick={props.openBasket}>Open Your Basket</button>
+        )}
       </div>
     </div>
   );

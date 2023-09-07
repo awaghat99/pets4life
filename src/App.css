@@ -9,7 +9,6 @@
 }
 
 .aside-from-basket {
-  border: 1px solid blue;
   width: 75%;
 }
 
@@ -76,15 +75,24 @@
   height: 100%;
 }
 
+.close-basket {
+  position: relative;
+  left: 90%;
+  border: 1px solid black;
+}
+
 .Basket-item {
-  display: flex;
+  border: 1px solid black;
   width: 100%;
+  text-align: center;
 }
 
 .Basket-image {
   width: 50%;
+  margin: auto;
 }
 
 .Basket-image img {
   width: 100%;
+  aspect-ratio: 1;
 }
