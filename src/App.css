@@ -1,15 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Rampart+One&display=swap');
+
 .App {
   text-align: center;
 }
 
 .main {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+
+}
+
+.intro {
+  height: 10em;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Rampart One', cursive;
+  font-size: 90px;
+  margin: 0;
+}
+
+.sub-heading {
+  font-family: 'Rampart One', cursive;
+  font-size: 60px;
+}
+
+.browse {
+  font-family: 'Dosis', sans-serif;
+  font-size: 45px;
+  padding-bottom: 45px;
+}
+
+.sale-btn {
+  align-self: center;
+  background-color: #FCA311;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+  font-size: 3rem;
+  line-height: 23px;
+  outline: none;
+  padding: 2rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sale-btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #ffb030;
+}
+
+.sale-btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
 .aside-from-basket {
-  width: 75%;
+  width: 75;
 }
 
 .full-basket {
