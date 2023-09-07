@@ -77,8 +77,13 @@
 
 .Basket-item {
   display: flex;
+  width: 100%;
+}
+
+.Basket-image {
+  width: 50%;
 }
 
 .Basket-image img {
-  width: 50%;
+  width: 100%;
 }
