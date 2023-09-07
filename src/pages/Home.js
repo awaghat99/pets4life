@@ -6,12 +6,12 @@ import Basket from "../components/Basket";
 const Home = (props) => {
   return (
     <div className="main">
-      <div>
-      <h1>Cats For Life</h1>
-      <CatCardHolder catData={props.catData} />
+      <div className="aside-from-basket">
+        <h1>Cats For Life</h1>
+        <CatCardHolder catData={props.catData} />
       </div>
-      <div>
-      <Basket/>
+      <div className="full-basket">
+        <Basket />
       </div>
     </div>
   );

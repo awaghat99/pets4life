@@ -4,14 +4,22 @@
 
 .main {
   display: flex;
+  flex-wrap: wrap;
+}
 
+.aside-from-basket {
+  border: 1px solid blue;
+  width: 75%;
+}
+
+.full-basket {
+  width: 25%;
 }
 
 .all-cats {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
 }
 
 .one-cat {
@@ -61,17 +69,15 @@
   background-color: blue;
 }
 
-.Basket-item {
-  display: flex;
-}
-
 .basket-container {
   border: 1px solid black;
   width: 100%;
   height: 100%;
 }
 
-.basket-content {}
+.Basket-item {
+  display: flex;
+}
 
 .Basket-image img {
   width: 50%;

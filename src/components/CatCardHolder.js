@@ -21,6 +21,7 @@ const CatCardHolder = (props) => {
   return (
     <div>
       <div className="all-cats">
+        {console.log(`displayedcats: ${displayedCats}`)}
         {[
           displayedCats
             ? displayedCats.map((cat, index) => {
