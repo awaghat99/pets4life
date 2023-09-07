@@ -9,7 +9,13 @@ const BasketItem = (props) => {
       <div className="Basket-price-and-breed">
         <h3>£100</h3>
         <h2>{props.basketItem.breeds[0].name ? props.basketItem.breeds[0].name : "Cat Breed"}</h2>
-        <button>Remove</button>
+        <button
+          onClick={() => {
+            props.handleRemoveFromBasket(props.basketItem);
+          }}
+        >
+          Remove
+        </button>
       </div>
     </div>
   );

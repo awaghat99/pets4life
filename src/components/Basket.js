@@ -9,7 +9,7 @@ const Basket = (props) => {
       {[
         props.basketData.length > 0
           ? props.basketData.map((basketItem, index) => {
-              return <BasketItem basketItem={basketItem} key={index} />;
+              return <BasketItem basketItem={basketItem} key={index} handleRemoveFromBasket={props.handleRemoveFromBasket} />;
             })
           : "Your basket is empty",
       ]}
