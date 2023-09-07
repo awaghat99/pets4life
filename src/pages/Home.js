@@ -6,8 +6,7 @@ import Basket from "../components/Basket";
 const Home = (props) => {
   return (
     <div className="main">
-      <div>
-      <h1>Cats For Life</h1>
+      <div className="cat-grid">
       <CatCardHolder catData={props.catData} />
       </div>
       <div>

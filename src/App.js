@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Navbar from "./components/NavBar";
+import Landing from "./pages/Landing";
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <Routes>
           <Route path="/Home" element={<Home catData={catData} />} />
           <Route path="/About" element={<About />} />
+          <Route path="/" element={<Landing />} />
         </Routes>
       </div>
     </>
