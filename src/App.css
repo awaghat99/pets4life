@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.main {
+  display: flex;
+
+}
+
 .all-cats {
   display: flex;
   justify-content: space-around;
@@ -54,4 +59,20 @@
 
 .active {
   background-color: blue;
+}
+
+.Basket-item {
+  display: flex;
+}
+
+.basket-container {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.basket-content {}
+
+.Basket-image img {
+  width: 50%;
 }
