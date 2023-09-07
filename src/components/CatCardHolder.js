@@ -39,14 +39,7 @@ const CatCardHolder = (props) => {
           onPageChange={handlePageClick}
           containerClassName="pagination"
           activeClassName="active"
-          pageClassName="page-item"
-          previousClassName="page-item"
-          nextClassName="page-item"
-          pageLinkClassName="page-link"
-          previousLinkClassName="page-link"
-          nextLinkClassName="page-link"
-          breakClassName="page-item"
-          breakLinkClassName="page-link"
+          renderOnZeroPageCount={null}
         />
       </div>
     </div>
