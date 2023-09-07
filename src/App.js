@@ -1,7 +1,9 @@
-import "./App.css";
+import "../src/App.css";
+import "../src/style.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Checkout from "./pages/Checkout"
 import Navbar from "./components/NavBar";
 import { useState, useEffect } from "react";
 
@@ -32,6 +34,7 @@ const App = () => {
         <Routes>
           <Route path="/Home" element={<Home catData={catData} />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Routes>
       </div>
     </>
