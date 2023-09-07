@@ -7,6 +7,11 @@ import { useState, useEffect } from "react";
 
 const App = () => {
   const [catData, setCatData] = useState();
+  const [basketData, setBasketData] = useState([]);
+
+  const handleAddToCart = (item) => {
+    setBasketData([...basketData, item]);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -30,7 +35,7 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/Home" element={<Home catData={catData} />} />
+          <Route path="/Home" element={<Home catData={catData} basketData={basketData} handleAddToCart={handleAddToCart} />} />
           <Route path="/About" element={<About />} />
         </Routes>
       </div>
