@@ -1,7 +1,7 @@
 import React from "react";
+import "../App.css";
 import CatCardHolder from "../components/CatCardHolder";
 import Basket from "../components/Basket";
-import { Transition } from "react-transition-group";
 
 const Home = (props) => {
   return (
