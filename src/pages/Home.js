@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import CatCardHolder from "../components/CatCardHolder";
 import Basket from "../components/Basket";
+import { Transition } from "react-transition-group";
 
 const Home = (props) => {
   return (
@@ -14,7 +15,9 @@ const Home = (props) => {
         {props.isBasketOpen ? (
           <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} closeBasket={props.closeBasket} />
         ) : (
-          <button onClick={props.openBasket}>Open Your Basket</button>
+          <button className="basket-open-button" onClick={props.openBasket}>
+            Open Your Basket
+          </button>
         )}
       </div>
     </div>
