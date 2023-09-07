@@ -11,7 +11,7 @@ const Home = (props) => {
         <CatCardHolder catData={props.catData} handleAddToCart={props.handleAddToCart} />
       </div>
       <div className="full-basket">
-        <Basket basketData={props.basketData} />
+        <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} />
       </div>
     </div>
   );

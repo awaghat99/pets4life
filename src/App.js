@@ -13,6 +13,13 @@ const App = () => {
     setBasketData([...basketData, item]);
   };
 
+  const handleRemoveFromBasket = (item) => {
+    const updatedBasket = basketData.filter((i) => {
+      return i.id !== item.id;
+    });
+    setBasketData(updatedBasket);
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -35,7 +42,12 @@ const App = () => {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/Home" element={<Home catData={catData} basketData={basketData} handleAddToCart={handleAddToCart} />} />
+          <Route
+            path="/Home"
+            element={
+              <Home catData={catData} basketData={basketData} handleAddToCart={handleAddToCart} handleRemoveFromBasket={handleRemoveFromBasket} />
+            }
+          />
           <Route path="/About" element={<About />} />
         </Routes>
       </div>
