@@ -25,7 +25,7 @@ const CatCardHolder = (props) => {
         {[
           displayedCats.length > 0
             ? displayedCats.map((cat, index) => {
-                return <CatCard key={index} cat={cat} price={createRandomPrice()} />;
+                return <CatCard key={index} cat={cat} price={createRandomPrice()} handleAddToCart={props.handleAddToCart} />;
               })
             : "Loading Cat Data",
         ]}
