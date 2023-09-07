@@ -11,7 +11,11 @@ const Home = (props) => {
         <CatCardHolder catData={props.catData} handleAddToCart={props.handleAddToCart} />
       </div>
       <div className="full-basket">
-        <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} />
+        {props.isBasketOpen ? (
+          <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} closeBasket={props.closeBasket} />
+        ) : (
+          <button onClick={props.openBasket}>Open Your Basket</button>
+        )}
       </div>
     </div>
   );
