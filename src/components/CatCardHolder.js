@@ -1,33 +1,14 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CatCard from "../components/CatCard";
 import ReactPaginate from "react-paginate";
 
-const CatCardHolder = () => {
-  const [catData, setCatData] = useState([]);
+const CatCardHolder = (props) => {
   const [currentPage, setCurrentPage] = useState(0);
 
   const createRandomPrice = () => {
     return Math.floor(Math.random() * 250);
   };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `https://api.thecatapi.com/v1/images/search?has_breeds=1&limit=99&api_key=live_a49d14G4QIFGKTDT4vMm7ZlGDTCMhjTTcluXKodeyxclY7XubXPGvHa55wY6eNIf`
-        );
-        if (!response.ok) {
-          throw new Error(response.statusText);
-        }
-        const data = await response.json();
-        setCatData(data);
-      } catch (e) {
-        console.log(e.message);
-      }
-    };
-    fetchData();
-  }, []);
 
   const catsPerPage = 9;
 
@@ -35,13 +16,13 @@ const CatCardHolder = () => {
     setCurrentPage(selected);
   };
 
-  const pageCount = Math.ceil(catData.length / catsPerPage);
-  const displayedCats = catData.slice(currentPage * catsPerPage, (currentPage + 1) * catsPerPage);
+  const pageCount = Math.ceil(props.CatData ? props.catData.length / catsPerPage : 11);
+  const displayedCats = props.catData ? props.catData.slice(currentPage * catsPerPage, (currentPage + 1) * catsPerPage) : "No Cats Yet";
   return (
     <div>
       <div className="all-cats">
         {[
-          displayedCats.length > 0
+          displayedCats
             ? displayedCats.map((cat, index) => {
                 return <CatCard key={index} cat={cat} price={createRandomPrice()} />;
               })

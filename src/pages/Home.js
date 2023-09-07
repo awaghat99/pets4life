@@ -2,11 +2,11 @@ import React from "react";
 import "../App.css";
 import CatCardHolder from "../components/CatCardHolder";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
       <h1>Cats For Life</h1>
-      <CatCardHolder />
+      <CatCardHolder catData={props.catData} />
     </div>
   );
 };
