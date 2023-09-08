@@ -12,13 +12,13 @@ const Basket = (props) => {
       >
         X
       </button>
-      <h2> Your Basket</h2>
+      <h2 className="your-basket"> Your Basket</h2>
       {[
         props.basketData.length > 0
           ? props.basketData.map((basketItem, index) => {
               return <BasketItem basketItem={basketItem} key={index} handleRemoveFromBasket={props.handleRemoveFromBasket} />;
             })
-          : "Your basket is empty",
+          : <p className="basket-is-empty">Your basket is empty</p>,
       ]}
     </div>
   );
