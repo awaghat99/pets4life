@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../style.css";
 
-function Checkout() {
+function Checkout(props) {
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
     const [address, setAddress] = useState('');
@@ -76,8 +76,12 @@ function Checkout() {
 
         </div>
         <button class="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <h2>{props.catPricesTotal}</h2>
         </div>
     </div> 
+        
+
+
     );
             
 }
