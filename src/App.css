@@ -369,8 +369,8 @@ input[type="text"] {
   font-size: 1rem;
   margin: 2px;
   position: relative; 
-  top: 30px; 
-  left: 40%; 
+  top: 10px; 
+  
 }
   
 
@@ -421,3 +421,17 @@ input[type="text"] {
 box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
 transform: translate3d(0, 2px, 0);
 background-color: #ffb030; }
+
+
+
+.total{
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: -17%;
+  margin-left: 50%;
+  border-radius: 20px;
+}

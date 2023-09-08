@@ -75,8 +75,7 @@ function Checkout(props) {
            </div> 
 
         </div>
-        <button class="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
-        <h2 className="total">{props.catPricesTotal}</h2>
+        <button class="checkoutbutton sale-btn" onClick={() => alert('Checkout completed!')}>Checkout</button>
         </div>
         
         
