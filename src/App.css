@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Rampart+One&display=swap");
 
 .App {
   text-align: center;
@@ -8,7 +8,6 @@
 
 .main {
   display: flex;
-
 }
 
 .intro {
@@ -17,25 +16,25 @@
 }
 
 .heading {
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
   font-size: 90px;
   margin: 0;
 }
 
 .sub-heading {
-  font-family: 'Rampart One', cursive;
+  font-family: "Rampart One", cursive;
   font-size: 60px;
 }
 
 .browse {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 45px;
   padding-bottom: 45px;
 }
 
 .sale-btn {
   align-self: center;
-  background-color: #FCA311;
+  background-color: #fca311;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -43,12 +42,12 @@
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 3rem;
   line-height: 23px;
   outline: none;
@@ -65,35 +64,35 @@
 }
 
 .sale-btn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   background-color: #ffb030;
 }
 
 .sale-btn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 .sale-btn-small {
   align-self: center;
-  background-color: #FCA311;
+  background-color: #fca311;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
   background-size: 4px 3px;
-  border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
   line-height: 23px;
   outline: none;
-  padding: 10px;
+  padding: 1rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -106,13 +105,13 @@
 }
 
 .sale-btn-small:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   background-color: #ffb030;
 }
 
 .sale-btn-small:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 .aside-from-basket {
@@ -125,8 +124,51 @@
 
 .full-basket {
   width: 25%;
-  justify-content: center;
-  align-items: center;
+}
+
+.basket-open-button {
+margin-top:25px;
+align-self: center;
+background-color: #FCA311;
+background-image: none;
+background-position: 0 90%;
+background-repeat: repeat no-repeat;
+background-size: 4px 3px;
+border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
+border-style: solid;
+border-width: 1px;
+box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+box-sizing: border-box;
+color: #000;
+cursor: pointer;
+display: inline-block;
+font-family: 'Dosis', sans-serif;
+font-size: 20px;
+line-height: 23px;
+outline: none;
+padding: 10px;
+text-decoration: none;
+transition: all 235ms ease-in-out;
+border-bottom-left-radius: 15px 255px;
+border-bottom-right-radius: 225px 15px;
+border-top-left-radius: 255px 15px;
+border-top-right-radius: 15px 225px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+  margin-left: 35%;
+}
+
+.basket-open-button:hover {
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+transform: translate3d(0, 2px, 0);
+background-color: #ffb030;
+margin-left: 35%;
+}
+
+.basket-open-button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  margin-left: 35%;
 }
 
 .all-cats {
@@ -166,7 +208,6 @@
 .pagination {
   display: flex;
   justify-content: center;
-  width: 80%;
   padding: 20px;
 }
 
@@ -225,45 +266,6 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   height: 100%;
 }
 
-.Open-Bask-Btn {
-  align-self: center;
-  background-color: #FCA311;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  color: #000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Dosis', sans-serif;
-  font-size: 20px;
-  line-height: 23px;
-  outline: none;
-  padding: 10px;
-  margin-top: 15px;
-  margin-left:31%;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  }
-  
-  .Open-Bask-Btn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-  background-color: #ffb030;
-  }
-
 .close-basket {
   position: relative;
   left: 90%;
@@ -317,6 +319,7 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
 .Basket-item {
+  margin-top: 30px;
   width: 100%;
   text-align: center;
 }
@@ -330,3 +333,95 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   width: 100%;
   aspect-ratio: 1;
 }
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 2px
+}
+
+.Open-Bask-Btn {
+  margin-top: 25px;
+}
+
+.checkoutbutton{
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 2px;
+  position: relative; 
+  top: 30px; 
+  left: 40%; 
+}
+
+.cPage{
+  background-color: #FCA311;
+  height: 100vh;
+}
+
+.total-price {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.£ {
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.breed-name {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.remove-btn {
+  position: relative;
+  align-self: center;
+  background-color: #FCA311;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  line-height: 23px;
+  outline: none;
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.remove-btn:hover {
+box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+transform: translate3d(0, 2px, 0);
+background-color: #ffb030; }
