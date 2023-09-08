@@ -12,7 +12,8 @@ function Checkout() {
     
     
     return (
-        <div class="checkout">
+    <div className='cPage'>
+        <div className="checkout page">
             <h1>Checkout</h1>
             <div class="name">
             <input
@@ -74,8 +75,9 @@ function Checkout() {
            </div> 
 
         </div>
-        <button onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <button class="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
         </div>
+    </div> 
     );
             
 }
