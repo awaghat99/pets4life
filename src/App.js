@@ -84,7 +84,7 @@ const App = () => {
             }
           />
           <Route path="/About" element={<About />} />
-          <Route path="/Checkout" element={<Checkout />} />
+          <Route path="/Checkout" element={<Checkout catPricesTotal={catPricesTotal}/>} />
           <Route path="/" element={<Landing />} />
         </Routes>
       </div>

@@ -73,6 +73,7 @@
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
+
 .aside-from-basket {
   width: 75%;
 }
@@ -165,4 +166,35 @@
 .Basket-image img {
   width: 100%;
   aspect-ratio: 1;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 2px
+}
+
+.checkoutbutton{
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 2px;
+  position: relative; 
+  top: 30px; 
+  left: 40%; 
+}
+
+.cPage{
+  background-color: #FCA311;
+  height: 100vh;
 }

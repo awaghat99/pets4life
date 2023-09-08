@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../style.css";
 
-function Checkout() {
+function Checkout(props) {
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
     const [address, setAddress] = useState('');
@@ -12,7 +12,8 @@ function Checkout() {
     
     
     return (
-        <div class="checkout">
+    <div className='cPage'>
+        <div className="checkout page">
             <h1>Checkout</h1>
             <div class="name">
             <input
@@ -74,8 +75,13 @@ function Checkout() {
            </div> 
 
         </div>
-        <button onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <button class="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <h2>{props.catPricesTotal}</h2>
         </div>
+    </div> 
+        
+
+
     );
             
 }
