@@ -6,6 +6,7 @@ export default function Navbar() {
      <Link to="Home" className="site-title">Cats 4 Life</Link>   
      <ul>
      <li>
+        <Link to="/About">About</Link>
       </li>
       <li>  
         <Link to="/Checkout">Checkout</Link>
