@@ -38,7 +38,7 @@ function Checkout(props) {
             <input type="text" placeholder="CVC Card" value={CVC} onChange={(e) => setCVC(e.target.value)} />
           </div>
         </div>
-        <button className="checkoutbutton" onClick={() => alert("Checkout completed!")}>
+        <button className="checkoutbutton sale-btn" onClick={() => alert("Checkout completed!")}>
           Checkout
         </button>
       </div>
