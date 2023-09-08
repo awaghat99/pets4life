@@ -75,7 +75,8 @@ function Checkout(props) {
            </div> 
 
         </div>
-        <button className="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <button class="checkoutbutton" onClick={() => alert('Checkout completed!')}>Checkout</button>
+        <h2 className="total">{props.catPricesTotal}</h2>
         </div>
         
         
@@ -96,55 +97,3 @@ function Checkout(props) {
             
 }
 export default Checkout;
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

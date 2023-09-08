@@ -10,7 +10,7 @@ const CatCard = (props) => {
       <div className="info-holder">
         <h2>{props.cat.breeds[0].name ? props.cat.breeds[0].name : "Cat"}</h2>
         <h3>Price: £{props.price}</h3>
-        <button
+        <button className="sale-btn-small"
           onClick={() => {
             props.handleAddToCart(props.cat, props.price);
           }}

@@ -12,7 +12,7 @@ const Basket = (props) => {
       >
         X
       </button>
-      <h2> Your Basket</h2>
+      <h2 className="your-basket"> Your Basket</h2>
       {[
         props.basketData.length > 0
           ? props.basketData.map((basketItem, index) => {
@@ -25,9 +25,9 @@ const Basket = (props) => {
                 />
               );
             })
-          : "Your basket is empty",
+          : <p className="basket-is-empty">Your basket is empty</p>,
       ]}
-      <h2>Your Total is: £{props.catPricesTotal}</h2>
+      <h2 className="total-price">Your Total is: £{props.catPricesTotal}</h2>
     </div>
   );
 };

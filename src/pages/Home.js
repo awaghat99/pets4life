@@ -7,6 +7,7 @@ const Home = (props) => {
   return (
     <div className="main">
       <div className="aside-from-basket">
+        <div className="Grid-Top"/>
         
         <CatCardHolder catData={props.catData} handleAddToCart={props.handleAddToCart} />
       </div>
@@ -20,9 +21,7 @@ const Home = (props) => {
             catPricesTotal={props.catPricesTotal}
           />
         ) : (
-          <button className="basket-open-button" onClick={props.openBasket}>
-            Open Your Basket
-          </button>
+          <button className="Open-Bask-Btn basket-open-button" onClick={props.openBasket}>Open Your Basket</button>
         )}
       </div>
     </div>

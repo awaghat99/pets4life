@@ -29,8 +29,8 @@ const CatCardHolder = (props) => {
       </div>
       <div className="paginate-div">
         <ReactPaginate
-          previousLabel="previous"
-          nextLabel="next"
+          previousLabel="Previous"
+          nextLabel="Next"
           breakLabel="..."
           pageCount={pageCount}
           onPageChange={handlePageClick}
