@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import CatCardHolder from "../components/CatCardHolder";
 import Basket from "../components/Basket";
 
@@ -11,9 +12,17 @@ const Home = (props) => {
       </div>
       <div className="full-basket">
         {props.isBasketOpen ? (
-          <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} closeBasket={props.closeBasket} />
+          <Basket
+            basketData={props.basketData}
+            handleRemoveFromBasket={props.handleRemoveFromBasket}
+            closeBasket={props.closeBasket}
+            catPrice={props.catPrice}
+            catPricesTotal={props.catPricesTotal}
+          />
         ) : (
-          <button onClick={props.openBasket}>Open Your Basket</button>
+          <button className="basket-open-button" onClick={props.openBasket}>
+            Open Your Basket
+          </button>
         )}
       </div>
     </div>

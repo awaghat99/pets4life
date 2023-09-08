@@ -2,13 +2,10 @@ import React from "react";
 import { useState } from "react";
 import CatCard from "../components/CatCard";
 import ReactPaginate from "react-paginate";
+import filledArray from "./fakerdata";
 
 const CatCardHolder = (props) => {
   const [currentPage, setCurrentPage] = useState(0);
-
-  const createRandomPrice = () => {
-    return Math.floor(Math.random() * 250);
-  };
 
   const catsPerPage = 9;
 
@@ -25,7 +22,7 @@ const CatCardHolder = (props) => {
         {[
           displayedCats.length > 0
             ? displayedCats.map((cat, index) => {
-                return <CatCard key={index} cat={cat} price={createRandomPrice()} handleAddToCart={props.handleAddToCart} />;
+                return <CatCard key={index} cat={cat} price={filledArray[index]} handleAddToCart={props.handleAddToCart} />;
               })
             : "Loading Cat Data",
         ]}
@@ -39,14 +36,7 @@ const CatCardHolder = (props) => {
           onPageChange={handlePageClick}
           containerClassName="pagination"
           activeClassName="active"
-          pageClassName="page-item"
-          previousClassName="page-item"
-          nextClassName="page-item"
-          pageLinkClassName="page-link"
-          previousLinkClassName="page-link"
-          nextLinkClassName="page-link"
-          breakClassName="page-item"
-          breakLinkClassName="page-link"
+          renderOnZeroPageCount={null}
         />
       </div>
     </div>

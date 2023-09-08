@@ -7,11 +7,11 @@ const BasketItem = (props) => {
         <img src={props.basketItem.url} alt="cat" />
       </div>
       <div className="Basket-price-and-breed">
-        <h3>£100</h3>
+        <h3>£{props.catPrice}</h3>
         <h2>{props.basketItem.breeds[0].name ? props.basketItem.breeds[0].name : "Cat Breed"}</h2>
         <button
           onClick={() => {
-            props.handleRemoveFromBasket(props.basketItem);
+            props.handleRemoveFromBasket(props.basketItem, props.catPrice);
           }}
         >
           Remove

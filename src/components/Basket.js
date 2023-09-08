@@ -16,10 +16,18 @@ const Basket = (props) => {
       {[
         props.basketData.length > 0
           ? props.basketData.map((basketItem, index) => {
-              return <BasketItem basketItem={basketItem} key={index} handleRemoveFromBasket={props.handleRemoveFromBasket} />;
+              return (
+                <BasketItem
+                  basketItem={basketItem}
+                  key={index}
+                  handleRemoveFromBasket={props.handleRemoveFromBasket}
+                  catPrice={props.catPrice[index]}
+                />
+              );
             })
           : "Your basket is empty",
       ]}
+      <h2>Your Total is: £{props.catPricesTotal}</h2>
     </div>
   );
 };

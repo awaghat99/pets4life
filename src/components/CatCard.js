@@ -12,7 +12,7 @@ const CatCard = (props) => {
         <h3>Price: £{props.price}</h3>
         <button
           onClick={() => {
-            props.handleAddToCart(props.cat);
+            props.handleAddToCart(props.cat, props.price);
           }}
         >
           Add to cart
