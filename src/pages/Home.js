@@ -8,6 +8,7 @@ const Home = (props) => {
     <div className="main">
       <div className="aside-from-basket">
         <div className="Grid-Top"/>
+        
         <CatCardHolder catData={props.catData} handleAddToCart={props.handleAddToCart} />
       </div>
       <div className="full-basket">
