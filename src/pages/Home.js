@@ -12,7 +12,13 @@ const Home = (props) => {
       </div>
       <div className="full-basket">
         {props.isBasketOpen ? (
-          <Basket basketData={props.basketData} handleRemoveFromBasket={props.handleRemoveFromBasket} closeBasket={props.closeBasket} />
+          <Basket
+            basketData={props.basketData}
+            handleRemoveFromBasket={props.handleRemoveFromBasket}
+            closeBasket={props.closeBasket}
+            catPrice={props.catPrice}
+            catPricesTotal={props.catPricesTotal}
+          />
         ) : (
           <button className="basket-open-button" onClick={props.openBasket}>
             Open Your Basket

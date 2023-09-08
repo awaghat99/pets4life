@@ -3,7 +3,7 @@ import "../src/style.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Checkout from "./pages/Checkout"
+import Checkout from "./pages/Checkout";
 import Navbar from "./components/NavBar";
 import Landing from "./pages/Landing";
 import { useState, useEffect } from "react";
@@ -12,16 +12,29 @@ const App = () => {
   const [catData, setCatData] = useState();
   const [basketData, setBasketData] = useState([]);
   const [isBasketOpen, setIsBasketOpen] = useState(false);
+  const [catPriceArray, setCatPriceArray] = useState([]);
+  const [catPricesTotal, setCatPricesTotal] = useState(0);
 
-  const handleAddToCart = (item) => {
+  const handleAddToCart = (item, price) => {
     setBasketData([...basketData, item]);
+    setCatPriceArray([...catPriceArray, price]);
+    let totalCatPrice = catPricesTotal;
+    totalCatPrice += price;
+    setCatPricesTotal(totalCatPrice);
   };
 
-  const handleRemoveFromBasket = (item) => {
+  const handleRemoveFromBasket = (item, price) => {
     const updatedBasket = basketData.filter((i) => {
       return i.id !== item.id;
     });
     setBasketData(updatedBasket);
+    const updatedPriceArray = catPriceArray.filter((itemPrice) => {
+      return itemPrice !== price;
+    });
+    setCatPriceArray(updatedPriceArray);
+    let totalCatPrice = catPricesTotal;
+    totalCatPrice -= price;
+    setCatPricesTotal(totalCatPrice);
   };
 
   const openBasket = () => {
@@ -59,12 +72,14 @@ const App = () => {
             element={
               <Home
                 catData={catData}
+                catPrice={catPriceArray}
                 basketData={basketData}
                 handleAddToCart={handleAddToCart}
                 handleRemoveFromBasket={handleRemoveFromBasket}
                 openBasket={openBasket}
                 closeBasket={closeBasket}
                 isBasketOpen={isBasketOpen}
+                catPricesTotal={catPricesTotal}
               />
             }
           />
