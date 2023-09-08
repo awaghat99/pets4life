@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pets4life/static/css/main.5938dcaa.css",
-    "main.js": "/pets4life/static/js/main.2ebd062f.js",
+    "main.js": "/pets4life/static/js/main.1b95e0d4.js",
     "index.html": "/pets4life/index.html",
     "main.5938dcaa.css.map": "/pets4life/static/css/main.5938dcaa.css.map",
-    "main.2ebd062f.js.map": "/pets4life/static/js/main.2ebd062f.js.map"
+    "main.1b95e0d4.js.map": "/pets4life/static/js/main.1b95e0d4.js.map"
   },
   "entrypoints": [
     "static/css/main.5938dcaa.css",
-    "static/js/main.2ebd062f.js"
+    "static/js/main.1b95e0d4.js"
   ]
 }
