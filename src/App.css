@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=Rampart+One&display=swap");
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 .App {
@@ -93,10 +93,9 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: "Dosis", sans-serif;
-  font-size: 2rem;
-  line-height: 23px;
+  font-size: 1rem;
   outline: none;
-  padding: 1rem;
+  padding: 0.5rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -131,47 +130,47 @@ body {
 }
 
 .basket-open-button {
-margin-top:25px;
-align-self: center;
-background-color: #FCA311;
-background-image: none;
-background-position: 0 90%;
-background-repeat: repeat no-repeat;
-background-size: 4px 3px;
-border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
-border-style: solid;
-border-width: 1px;
-box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-box-sizing: border-box;
-color: #000;
-cursor: pointer;
-display: inline-block;
-font-family: 'Dosis', sans-serif;
-font-size: 20px;
-line-height: 23px;
-outline: none;
-padding: 10px;
-text-decoration: none;
-transition: all 235ms ease-in-out;
-border-bottom-left-radius: 15px 255px;
-border-bottom-right-radius: 225px 15px;
-border-top-left-radius: 255px 15px;
-border-top-right-radius: 15px 225px;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
+  margin-top: 25px;
+  align-self: center;
+  background-color: #fca311;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  outline: none;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   margin-left: 35%;
 }
 
 .basket-open-button:hover {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-transform: translate3d(0, 2px, 0);
-background-color: #ffb030;
-margin-left: 35%;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #ffb030;
+  margin-left: 35%;
 }
 
 .basket-open-button:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
   margin-left: 35%;
 }
 
@@ -201,7 +200,7 @@ margin-left: 35%;
 }
 
 .info-holder {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 17px;
   position: relative;
   box-sizing: border-box;
@@ -225,44 +224,44 @@ margin-left: 35%;
 }
 
 .active {
-align-self: center;
-background-color: #FCA311;
-background-image: none;
-background-position: 0 90%;
-background-repeat: repeat no-repeat;
-background-size: 4px 3px;
-border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
-border-style: solid;
-border-width: 1px;
-box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-box-sizing: border-box;
-color: #000;
-cursor: pointer;
-display: inline-block;
-font-family: 'Dosis', sans-serif;
-font-size: 20px;
-line-height: 23px;
-outline: none;
-padding: 10px;
-text-decoration: none;
-transition: all 235ms ease-in-out;
-border-bottom-left-radius: 15px 255px;
-border-bottom-right-radius: 225px 15px;
-border-top-left-radius: 255px 15px;
-border-top-right-radius: 15px 225px;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
+  align-self: center;
+  background-color: #fca311;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  outline: none;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .active:hover {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-transform: translate3d(0, 2px, 0);
-background-color: #ffb030;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #ffb030;
 }
 
 .active:focus {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 .basket-container {
@@ -274,7 +273,7 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   position: relative;
   left: 90%;
   align-self: center;
-  background-color: #FCA311;
+  background-color: #fca311;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -282,12 +281,12 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 30px;
   line-height: 23px;
   outline: none;
@@ -305,19 +304,19 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
 .close-basket:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
   background-color: #ffb030;
 }
 
 .your-basket {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 35px;
   text-align: center;
 }
 
 .basket-is-empty {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 25px;
   text-align: center;
 }
@@ -338,9 +337,9 @@ box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   aspect-ratio: 1;
 }
 
-.cPage{
-  background-color: #FCA311;
-  height: 100vh;
+.cPage {
+  background-color: #fca311;
+  height: 200vh;
 }
 
 .checkout {
@@ -355,31 +354,30 @@ input[type="text"] {
   height: 50px;
   padding: 10px;
   font-size: 1rem;
-  margin: 2px
+  margin: 2px;
 }
 
 .Open-Bask-Btn {
   margin-top: 25px;
 }
 
-.checkoutbutton{
+.checkoutbutton {
   width: 250px;
   height: 50px;
   padding: 10px;
   font-size: 1rem;
   margin: 2px;
-  position: relative; 
-  top: 30px; 
-  left: 40%; 
+  position: relative;
+  top: 30px;
+  left: 40%;
 }
-  
 
-.checkout h1{
+.checkout h1 {
   font-size: 2.5rem;
 }
 
 .total-price {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   display: flex;
   justify-content: center;
 }
@@ -387,7 +385,7 @@ input[type="text"] {
 .remove-btn {
   position: relative;
   align-self: center;
-  background-color: #FCA311;
+  background-color: #fca311;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -395,12 +393,12 @@ input[type="text"] {
   border-radius: 10px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 30px;
   line-height: 23px;
   outline: none;
@@ -418,6 +416,7 @@ input[type="text"] {
 }
 
 .remove-btn:hover {
-box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-transform: translate3d(0, 2px, 0);
-background-color: #ffb030; }
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #ffb030;
+}
